@@ -2,10 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description:
 nav: true
 ---
+<h3>UC Riverside</h3>
+  <li> Spring: 2021: Two sections of Math 6B: Introduction to College Mathematics for Sciences II.</li>	
+  <li> Winter: 2021: Two sections of Math 131: Proof-based linear algebra.</li>	
+  <li> Fall 2020: Two sections of Math 9C: First Year of Calculus III.</li>
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+<h3>UBC</h3>
+  <li> Fall 2018: One section of Math 100: Differential Calculus with Applications to Physical Sciences and Engineering.</li>

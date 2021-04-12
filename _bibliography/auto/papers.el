@@ -4,6 +4,7 @@
    (LaTeX-add-bibitems
     "GGK1"
     "GGK2"
-    "GGK4"))
+    "GGK4"
+    "GGK3"))
  :bibtex)
 
