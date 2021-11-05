@@ -24,4 +24,4 @@ I am a visiting assistant professor at UC Riverside since July 2020. Before this
 
  I was born and raised in Mexico City, where I completed my undergraduate studies in physics and a master's degree in mathematics at the <a href="https://en.wikipedia.org/wiki/National_Autonomous_University_of_Mexico">National Autonomous University of Mexico </a> (UNAM), both under the supervision of Adolfo Sánchez Valenzuela. 
  
-I have two last names and no middle name: González and Anaya are my father's and mother's surnames, respectively.  In México and other Latin American countries it's common to follow the <a href = "https://en.wikipedia.org/wiki/Spanish_naming_customs#Naming_system_in_Spain">Spanish naming conventions</a>. 
+I have two last names and no middle name: González and Anaya are my father's and mother's surnames, respectively.  In Mexico and other Latin American countries it's common to follow the <a href = "https://en.wikipedia.org/wiki/Spanish_naming_customs#Naming_system_in_Spain">Spanish naming conventions</a>. 
