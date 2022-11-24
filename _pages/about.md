@@ -2,7 +2,9 @@
 layout: about
 title: About
 permalink: /
-description: javiergo at ucr dot edu | CV <a href = "https://github.com/javiergoa/cv/blob/main/CV-GonzalezAnaya-Nov21.pdf" target="_blank">browser</a>  or <a href="https://github.com/javiergoa/cv/raw/main/CV-GonzalezAnaya-Nov21.pdf">download</a>
+description: javiergo at ucr dot edu |
+	     CV <a href = "https://github.com/javiergoa/cv/blob/main/CV-JavierGA.pdf" target="_blank">browser</a>  or <a href="https://github.com/javiergoa/cv/raw/main/CV-JavierGA.pdf">download</a>
+	     Research Statement <a href = "https://github.com/javiergoa/rs/blob/main/RS-research.pdf" target="_blank">browser</a>  or <a href="https://github.com/javiergoa/rs/blob/main/RS-research.pdf">download</a>
 
 profile:
   align: right
