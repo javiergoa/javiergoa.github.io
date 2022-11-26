@@ -11,8 +11,8 @@ profile:
     <p>231 Skye</p>
     <p>Deptartment of Mathematics</p>
     <p>UC Riverside</p>	
-    <p><a href="https://scholar.google.ca/citations?user=wUjHZcoAAAAJ">Google Scholar</a></p>
-    <p><a href="https://orcid.org/0000-0002-4930-0165">ORCiD</a></p>
+    <p><a href="https://scholar.google.ca/citations?user=wUjHZcoAAAAJ" target="_blank">Google Scholar</a></p>
+    <p><a href="https://orcid.org/0000-0002-4930-0165" target="_blank">ORCiD</a></p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
