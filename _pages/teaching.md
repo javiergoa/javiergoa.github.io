@@ -15,7 +15,7 @@ At UCR I have taught a variety of classes and mentored several students:<br>
    <b>Mentoring</b>:<br>
    <ul>
        <li>Faculty Mentor for the National Science Foundation funded California Alliance for Minority Participation (CAMP) Summer Scholars program, designed for STEM students who want to pursue graduate degrees. The student has given three poster presentations at regional conferences; twice individually and one as part of a larger group.</li>
-       <li>Co-led with Patricio Gallardo a 10-week summer REU in combinatorics of neural networks. They presented a poster at a regional conference and we have started working towards a publication aimed for early Spring 2023.</li>
+       <li>Co-led a 10-week summer REU in combinatorics of neural networks. They presented a poster at a regional conference and we have started working towards a publication aimed for early Spring 2023.</li>
        <li>Supervised an undergraduate student on reading graduate-level sheaf theory.</li>
 </ul>
 
