@@ -1,15 +1,25 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description:
+title: teaching and mentoring
+description: 
 nav: true
 ---
-<h3>UC Riverside</h3>
-  <li> Fall 2021: Two sections of Math 9A: First Year of Calculus I.</li>
-  <li> Spring: 2021: Two sections of Math 6B: Introduction to College Mathematics for Sciences II.</li>	
-  <li> Winter: 2021: Two sections of Math 131: Proof-based linear algebra.</li>	
-  <li> Fall 2020: Two sections of Math 9C: First Year of Calculus III.</li>
+My goal as an instructor and mentor is to help all students become more analytical and independent mathematical thinkers. By having an interactive lecture style and adhering to inclusive teaching principles, I create a environment where students feel compelled to engage with mathematical concepts. As a recognition of my work I won the 2021 - 2022 Outstanding VAP award for excellence in teaching at UCR.
 
-<h3>UBC</h3>
-  <li> Fall 2018: One section of Math 100: Differential Calculus with Applications to Physical Sciences and Engineering.</li>
+My <a href="{{ '/assets/pdf/CV-JavierGA.pdf' | relative_url }}" target="_blank">CV</a> has a detailed account of the classes I've taught and my mentoring experiences.
+
+<h3>University of California, Riverside</h3>
+At UCR I have taught a variety of classes and mentored several students:<br>
+   
+   <b>Mentoring</b>:<br>
+   <ul>
+       <li>Faculty Mentor for the National Science Foundation funded California Alliance for Minority Participation (CAMP) Summer Scholars program, designed for STEM students who want to pursue graduate degrees. The student has given three poster presentations at regional conferences; twice individually and one as part of a larger group.</li>
+       <li>Co-led with Patricio Gallardo a 10-week summer REU in combinatorics of neural networks. They presented a poster at a regional conference and we have started working towards a publication aimed for early Spring 2023.</li>
+       <li>Supervised an undergraduate student on reading graduate-level sheaf theory.</li>
+</ul>
+
+   <b>Teaching</b>: I've taught classes ranging from pre-calculus and calculus to proof-based courses in linear algebra and topology, passing through history of mathematics and elementary number theory.<br>
+
+<h3>University of British Columbia</h3>
+  As a graduate student at UBC I taught a calculus class with applications to STEM. I also participated in a semester-long mathematics education class and at UBC's Instructional Skills Workshop (an intensive weekend-long workshop aimed for graduate students who want to learn about current best practices and trends in mathematics education). 
