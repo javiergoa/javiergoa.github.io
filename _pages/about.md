@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>231 Skye</p>
+    <p>242 Skye</p>
     <p>Deptartment of Mathematics</p>
     <p>UC Riverside</p>	
     <p><a href="https://scholar.google.ca/citations?user=wUjHZcoAAAAJ" target="_blank">Google Scholar</a></p>
