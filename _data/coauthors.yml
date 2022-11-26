@@ -9,3 +9,22 @@
 "Karu":
   - firstname: ["Kalle", "K.", "K"]
     url: https://www.math.ubc.ca/~karu/
+
+"Gallardo":
+  - firstname: ["Patricio", "P.", "P"]
+    url: https://sites.google.com/site/patriciogallardomath/
+
+"Escobar":
+  - firstname: ["Laura", "L.", "L"]
+    url: https://www.math.wustl.edu/~escobar/
+
+"Montúfar":
+  - firstname: ["Guido", "G.", "G"]
+    url: https://www.math.ucla.edu/~montufar/
+
+"Morales":
+  - firstname: ["Alejandro H", "A.", "A"]
+    url: https://sites.google.com/view/ahmorales/
+
+
+
