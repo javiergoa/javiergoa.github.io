@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry and other fields such as the theory of polytopes and machine learning. <b> I am currently in the job market and will attend the 2023 JMM in Boston</b>. Since July 2020 I am a visiting assistant professor at UC Riverside, before this I obtained my PhD in June 2020.
+I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry and other fields such as the theory of polytopes and machine learning. <b> I am currently in the job market</b>. Since July 2020 I am a visiting assistant professor at UC Riverside, before this I obtained my PhD in June 2020.
 
 As a mathematics educator I was awarded UCR's 2021 - 2022 Outstanding VAP award for excellence
 in teaching. My mentoring experiences include an REU about the combinatorial complexity of convolutional neural networks. The three students involved have given poster presentations at three regional conferences.
