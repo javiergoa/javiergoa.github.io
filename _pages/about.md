@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: javiergo at ucr.edu &emsp;|&emsp; <a href="/assets/pdf/CV-JavierGA.pdf" target="_blank"><b>CV</b></a>  &emsp;|&emsp;  <a href="/assets/pdf/RS-research.pdf" target="_blank"><b>Research Statement</b></a>
+description: javiergo at ucr.edu &emsp;|&emsp; <a href="/assets/pdf/CV-JavierGA-feb23.pdf" target="_blank"><b>CV</b></a> (<a href="/assets/pdf/CV-esp-feb23.pdf" target="_blank"><b>espa&ntildeol</b></a>)  &emsp;|&emsp;  <a href="/assets/pdf/RS-research.pdf" target="_blank"><b>Research Statement</b></a>
 
 profile:
   align: right
