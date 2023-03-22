@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry and other fields such as the theory of polytopes and machine learning. I obtained my PhD in June 2020 and have been a visiting assistant professor at the University of California at Riverside since then. <b>I am currently in the job market</b>.
+I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry and other fields such as the theory of polytopes and machine learning. I obtained my PhD in June 2020 and have been a visiting assistant professor at the University of California at Riverside since then. I will be joining Harvey Mudd College as a VAP in Fall 2023!
 
 As a mathematics educator I was awarded UCR's 2021 - 2022 Outstanding VAP award for excellence
 in teaching. My mentoring experiences include an REU about the combinatorial complexity of convolutional neural networks. The three students involved have given poster presentations at three regional conferences.
