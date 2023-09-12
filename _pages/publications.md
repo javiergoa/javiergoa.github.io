@@ -8,9 +8,26 @@ nav: true
 
 <div class="publications">
 
+{% bibliography -f papers%}
+
+</div>
+
+{% comment %}
+<h1>preprints</h1>
+
+<div class="publications">
+
+{% bibliography -f preprints %}
+
+</div>
+
+
+<div class="publications">
+
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
-
 </div>
+{% endcomment %}
+
