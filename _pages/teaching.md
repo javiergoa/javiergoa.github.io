@@ -5,9 +5,21 @@ title: teaching and mentoring
 description: 
 nav: true
 ---
-My goal as an instructor and mentor is to help all students become more analytical and independent mathematical thinkers. By having an interactive lecture style and adhering to inclusive teaching principles, I create a environment where students feel compelled to engage with mathematical concepts. As a recognition of my work I won the 2021 - 2022 Outstanding VAP award for excellence in teaching at UCR.
+My goal as an instructor and mentor is to help all students become more analytical and independent mathematical thinkers. By having an interactive lecture style and adhering to inclusive teaching principles, I create a environment where students feel compelled to engage with mathematical concepts. As a recognition of my work I won the 2021 - 2022 and 2022 - 2023 Outstanding VAP awards for excellence in teaching at UCR.
 
 My <a href="{{ '/assets/pdf/CV-JavierGA.pdf' | relative_url }}" target="_blank">CV</a> has a detailed account of the classes I've taught and my mentoring experiences.
+
+<h3>Harvey Mudd College</h3>
+My duties at HMC include teaching and being a mentor for their capstone experiences:<br>
+   
+   <b>Mentoring</b>:<br>
+   <ul>
+       <li>Senior Thesis: Guiding a senior undergraduate on a one-year research project on moduli theory and combinatorics.</li>
+       <li>Clinic: I advice a team of seniors on their clinic project. Follow <a href="https://www.hmc.edu/mathematics/capstone/clinic/" target="_blank">this link</a> to learn about what this means. </li>
+</ul>
+
+   <b>Teaching</b>: I am currently teaching a first course on ODEs and will be teaching linear algebra in the Spring semester.<br>	
+
 
 <h3>University of California, Riverside</h3>
 At UCR I have taught a variety of classes and mentored several students:<br>
