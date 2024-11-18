@@ -5,7 +5,7 @@ title: teaching and mentoring
 description: 
 nav: true
 ---
-My goal as an instructor and mentor is to help all students become more analytical and independent mathematical thinkers. By having an interactive lecture style and adhering to inclusive teaching principles, I create a environment where students feel compelled to engage with mathematical concepts. As a recognition of my work I won the 2021 - 2022 and 2022 - 2023 Outstanding VAP awards for excellence in teaching at UCR.
+TEST. My goal as an instructor and mentor is to help all students become more analytical and independent mathematical thinkers. By having an interactive lecture style and adhering to inclusive teaching principles, I create a environment where students feel compelled to engage with mathematical concepts. As a recognition of my work I won the 2021 - 2022 and 2022 - 2023 Outstanding VAP awards for excellence in teaching at UCR.
 
 My <a href="{{ '/assets/pdf/CV-JavierGA.pdf' | relative_url }}" target="_blank">CV</a> has a detailed account of the classes I've taught and my mentoring experiences.
 
