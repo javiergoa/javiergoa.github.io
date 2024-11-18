@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-years: [2023,2022,2021,2019]
+years: [2023,2022,2021,2019]ls
 nav: true
 ---
 
@@ -31,3 +31,4 @@ nav: true
 </div>
 {% endcomment %}
 
+<p>* = undergraduate collaborator</p>
