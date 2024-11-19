@@ -10,7 +10,7 @@ nav: true
 
 {% bibliography -f papers%}
 
-<p>* = undergraduate colaborator</p>
+<p>* = undergraduate collaborator</p>
 </div>
 
 {% comment %}
