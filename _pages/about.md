@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   address: >
     <p>2418 Shanahan</p>
-    <p>Deptartment of Mathematics</p>
+    <p>Department of Mathematics</p>
     <p>Harvey Mudd College </p>	
     <p><a href="https://scholar.google.ca/citations?user=7ODzlGYAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
     <p><a href="https://orcid.org/0000-0002-4930-0165" target="_blank">ORCiD</a></p>
