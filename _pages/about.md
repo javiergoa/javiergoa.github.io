@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: javiergo at hmc.edu &emsp;|&emsp; <a href="/assets/pdf/CV-JavierGA-24.pdf" target="_blank"><b>CV (2024)</b></a> (<a href="/assets/pdf/CV-esp-feb23.pdf" target="_blank"><b>espa&ntildeol (2023)</b></a>) 
+description: javiergo at hmc.edu &emsp;|&emsp; <a href="/assets/pdf/CV-JavierGA-25.pdf" target="_blank"><b>CV (3/2025)</b></a> (<a href="/assets/pdf/CV-esp-feb23.pdf" target="_blank"><b>espa&ntildeol (2023)</b></a>) 
 
 profile:
   align: right
