@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry, moduli theory, and other fields such as the theory of polytopes and machine learning. I am an assistant professor at <a href="https://www.scu.edu/" target="_blank">Santa Clara University</a>. Before this, I was assistant professor at Harvey Mudd College and the University of California at Riverside. I completed my PhD at the University of British Columbia in 2020.
+I am an algebraic geometer studying the geometric and combinatorial structures arising from birational geometry, moduli theory, and other fields such as the theory of polytopes and machine learning. I am an assistant professor at <a href="https://www.scu.edu/" target="_blank">Santa Clara University</a>. Before this, I was a visiting assistant professor at Harvey Mudd College and the University of California at Riverside. I completed my PhD at the University of British Columbia in 2020.
 
 As a mathematics educator, I was awarded UCR's Outstanding VAP Award for Excellence in Teaching for the academic years 2021–2022 and 2022–2023. I find great joy in mentoring students in mathematical research through various activities including directing undergraduate theses, leading REUs, and guiding reading courses.
 
