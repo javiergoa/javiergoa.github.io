@@ -10,7 +10,7 @@ nav: true
 
 <p>Below I expand a bit on my mentoring experiences. My <a href="/assets/pdf/CV-JavierGA-24.pdf" target="_blank">CV</a> has a detailed account of all the classes I have taught and my mentoring experiences.</p>
 <h3>Harvey Mudd College</h3>
-<p>At HMC I have had the pleasure of being a mentor for the <a href="https://www.hmc.edu/mathematics/capstone/clinic/" target="_blank">clinic program</a>, as well as a senior thesis advisor (check out our <a href="https://www.arxiv.org/abs/2409.08611" target="_blank">preprint!</a>). Last summer I co-led an REU on the interactions of moduli theory and combinatorics with <a href="https://www.math.hmc.edu/~dk/" target="_blank">Dagan Karp</a>.<br /></p>
+<p>At HMC I have had the pleasure of being a mentor for the <a href="https://www.hmc.edu/mathematics/capstone/clinic/" target="_blank">clinic program</a>, as well as a senior thesis advisor (check out our <a href="https://www.arxiv.org/abs/2409.08611" target="_blank">preprint!</a>). During the summers of 2024 and 2025 I co-led, together with with <a href="https://www.math.hmc.edu/~dk/" target="_blank">Dagan Karp</a>, REUs on topics related to moduli theory, combinatorics and tropical geometry.<br /></p>
 <h3>University of California, Riverside</h3>
 <p>While at UCR I enjoyed mentoring several students. This included being a mentor for the NSF funded California Alliance for Minority Participation (CAMP) Summer Scholars program, as well as leading and co-leading Summer REUs, advising students, etc. <br /></p>
 <h3>University of British Columbia</h3>
