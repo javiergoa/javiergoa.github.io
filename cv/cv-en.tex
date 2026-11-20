@@ -1,0 +1,413 @@
+\documentclass[11pt]{article}
+
+% ------------------------------------------------------------------
+%  Packages
+% ------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,bindingoffset=0.2in,left=0.5in,right=0.5in,top=0.5in,bottom=0.5in,footskip=.25in]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{etaremune}   % reverse-numbered lists
+\usepackage{titlesec}
+\usepackage[colorlinks,urlcolor=blue!50!black,linkcolor=black]{hyperref}
+
+% ------------------------------------------------------------------
+%  Layout
+% ------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\pagestyle{plain}
+\clubpenalty=10000
+\widowpenalty=10000
+
+% Section titles: small caps with a rule underneath
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+
+% Width of the right-hand column (dates, places)
+\newlength{\rcol}\setlength{\rcol}{5.4cm}
+\newlength{\colsep}\setlength{\colsep}{1em}
+\newlength{\entryskip}\setlength{\entryskip}{1.3ex}
+
+% One row: left text (wraps) | right text (flush right)
+\newcommand{\cvrow}[2]{%
+  \noindent
+  \parbox[t]{\dimexpr\linewidth-\rcol-\colsep\relax}{\raggedright\strut#1\strut}%
+  \hfill
+  \parbox[t]{\rcol}{\raggedleft\strut#2\strut}\par}
+
+% \entry{main line}{date}{second line}{place}   (any of the last two may be empty)
+% Pages may break between entries, never inside the first two lines.
+\newcommand{\entry}[4]{%
+  \par\addvspace{\entryskip}%
+  \ifblank{#3}%
+    {\cvrow{#1}{\emph{#2}\ifblank{#4}{}{\\#4}}}% no second line: place goes under the date
+    {\cvrow{#1}{\emph{#2}}\nopagebreak\cvrow{#3}{#4}}}
+
+% \desc{...}: description under an entry, kept in the left column
+\newcommand{\desc}[1]{%
+  \nopagebreak
+  {\rightskip=\dimexpr\rcol+\colsep\relax plus 4cm\noindent#1\par}}
+
+% Links
+\newcommand{\arxiv}[1]{\href{https://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\texttt{doi:#1}}}
+\newcommand{\ug}{$^{*}$}   % undergraduate coauthor
+\newcommand{\pubspacing}{\setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}\raggedright}
+
+% Placeholders still to be filled in (print in red so they can't be missed)
+\newcommand{\TODO}[1]{\textcolor{red}{[#1]}}
+
+\setlist[itemize]{nosep,leftmargin=1.5em}
+
+% ==================================================================
+\begin{document}
+
+{\Large\bfseries Javier González Anaya} \hfill {\small Last updated: November 2026}\par
+\smallskip
+Department of Mathematics and Computer Science, Santa Clara University\par
+Email: \href{mailto:jgonzalezanaya@scu.edu}{jgonzalezanaya@scu.edu} \quad
+Web: \href{https://javiergoa.github.io}{javiergoa.github.io} \quad
+ORCID: \href{https://orcid.org/0000-0002-4930-0165}{0000-0002-4930-0165}
+
+% ------------------------------------------------------------------
+\section{Current Position}
+
+\entry{\textbf{Assistant Professor}, Santa Clara University}{September 2025 -- present}
+      {Research interests: Algebraic geometry and its interactions with combinatorics and commutative algebra.}{Santa Clara, CA, USA}
+
+% ------------------------------------------------------------------
+\section{Previous Appointments}
+
+\entry{\textbf{Quarterly Lecturer}, Santa Clara University}{July 2025 -- August 2025}{}{Santa Clara, CA, USA}
+
+\entry{\textbf{Visiting Assistant Professor}, Harvey Mudd College}{July 2023 -- June 2025}
+      {Duties: Teaching, mentoring a senior thesis student, and faculty advisor for a capstone Clinic project.}{Claremont, CA, USA}
+
+\entry{\textbf{Visiting Assistant Professor}, University of California, Riverside}{September 2020 -- June 2023}
+      {Duties: Teaching 2 courses per quarter, leading reading courses and student research projects.}{Riverside, CA, USA}
+
+\entry{\textbf{Teaching Assistant}, University of British Columbia}{August 2015 -- June 2020}
+      {Classes: Pre-calculus, first-year calculus (differential, integral, both single and multivariate), proof-based linear algebra, proof-based number theory, mathematical logic, complex analysis.}{Vancouver, BC, Canada}
+\desc{Responsibilities: Head TA, directing discussion sessions, grading, helping students at the Mathematics Learning Center.}
+
+\entry{\textbf{Teaching Assistant}, Universidad Nacional Autónoma de México}{August 2012 -- June 2015}
+      {Classes: Linear Algebra I and II, Modern Algebra: Modules and homological algebra.}{CU, Mexico City, Mexico}
+\desc{Responsibilities: Designing discussion sessions and grading.}
+
+% ------------------------------------------------------------------
+\section{Education}
+
+\entry{\textbf{Ph.D. in Mathematics}, University of British Columbia}{August 2015 -- June 2020}
+      {Thesis: \emph{Negative curves in blowups of weighted projective planes}.}{Vancouver, BC, Canada}
+% Advisor: Kalle Karu
+
+\entry{\textbf{M.Sc. in Mathematics}, Universidad Nacional Autónoma de México (UNAM)}{August 2013 -- June 2015}
+      {Thesis: \emph{Study of the Lie algebra of vector fields that preserve the conformal structure of Minkowski spacetime}.}{CU, Mexico City, Mexico}
+% Advisor: Adolfo Sánchez Valenzuela
+
+\entry{\textbf{Licenciatura en Física}, Universidad Nacional Autónoma de México (UNAM)}{August 2007 -- June 2014}
+      {Thesis: \emph{Maxwell equations, the Clifford algebra of Minkowski spacetime and the Dirac operator; with an associated generalization to the Lie algebra of the conformal transformations of a Lorentz metric}.}{CU, Mexico City, Mexico}
+% Advisor: Adolfo Sánchez Valenzuela
+
+\entry{\textbf{Semester abroad}, Department of Physics, UC Berkeley}{August -- December 2011}
+      {Graduate classes: Quantum Field Theory.}{Berkeley, CA, USA}
+\desc{Undergraduate classes: Particle Physics, Modern Physics and Advanced Electrical Laboratory.}
+
+% ------------------------------------------------------------------
+\section{Publications and Preprints}
+
+\subsection*{Preprints\hfill{\normalfont\small \ug\ denotes an undergraduate coauthor}}
+\begin{etaremune}[start=12]\pubspacing
+  \item \emph{The Chow ring of a wonderful compactification}.
+        With P. Gallardo and J.L. González. Submitted. \arxiv{2611.07507}, 2026.
+
+  \item \emph{Toric structure of the moduli space of points in projective space}.
+        With M. Bit\ug, D. Karp, and Y. Luo\ug. Submitted. \arxiv{2511.23456}, 2025.
+
+  \item \emph{Dynamics of projectivized toric vector bundles}.
+        With B. Nasserden and S. Zotine. Submitted. \arxiv{2510.26757}, 2025.
+
+  \item \emph{Hypergraph associahedra and compactifications of moduli spaces of points}.
+        With J. Bown\ug. \arxiv{2409.08611}, 2024.
+\end{etaremune}
+
+\subsection*{Published}
+\begin{etaremune}[start=8]\pubspacing
+  \item \emph{Polymatroids and moduli of points in flags}.
+        With P. Gallardo and J.L. González.
+        Forum of Mathematics, Sigma \textbf{14} (2026), Paper No.~e77.
+        \doi{10.1017/fms.2026.10219}
+
+  \item \emph{Higher-dimensional Losev--Manin spaces and their geometry}.
+        With P. Gallardo, J.L. González, and E. Routis.
+        International Mathematics Research Notices (IMRN) \textbf{2025}, no.~23, Paper No.~rnaf347.
+        \doi{10.1093/imrn/rnaf347}
+
+  \item \emph{Enumeration of max-pooling responses with generalized permutohedra}.
+        With L. Escobar, P. Gallardo, J.L. González, G. Montúfar, and A.H. Morales.
+        Annals of Combinatorics (2025), published online.
+        \doi{10.1007/s00026-025-00782-x}
+
+  \item \emph{The geography of negative curves}.
+        With J.L. González and K. Karu.
+        Michigan Mathematical Journal \textbf{75} (2025), no.~1, 89--118.
+        \doi{10.1307/mmj/20226215}
+
+  \item \emph{Nonexistence of negative curves}.
+        With J.L. González and K. Karu.
+        International Mathematics Research Notices (IMRN) \textbf{2023}, no.~16, 14368--14400.
+        \doi{10.1093/imrn/rnac355}
+
+  \item \emph{Curves generating extremal rays in blowups of weighted projective planes}.
+        With J.L. González and K. Karu.
+        Journal of the London Mathematical Society (2) \textbf{104} (2021), no.~3, 1342--1362.
+        \doi{10.1112/jlms.12461}
+
+  \item \emph{Constructing non-Mori Dream Spaces from negative curves}.
+        With J.L. González and K. Karu.
+        Journal of Algebra \textbf{539} (2019), 118--137.
+        \doi{10.1016/j.jalgebra.2019.08.005}
+
+  \item \emph{On a family of negative curves}.
+        With J.L. González and K. Karu.
+        Journal of Pure and Applied Algebra \textbf{223} (2019), no.~11, 4871--4887.
+        \doi{10.1016/j.jpaa.2019.02.019}
+\end{etaremune}
+
+% ------------------------------------------------------------------
+\section{Teaching Experience as Instructor of Record}
+
+\subsection*{Lower Division Courses}
+\begin{itemize}
+  \item Calculus and Analytic Geometry III (\textbf{SCU}, Math 13, Fall 2026 and Winter 2027).
+  \item Calculus and Analytic Geometry IV (\textbf{SCU}, Math 14, two sections in Winter 2026; one section each in Spring 2026, Winter 2027, and Spring 2027).
+  \item Multivariable Calculus (\textbf{HMC}, Math 19, two sections, Fall 2024).
+  \item First-year Calculus I (\textbf{UCR}, Math 9A, two sections in Fall 2021, two sections in Fall 2022).
+  \item Introduction to College Mathematics for Sciences II (Precalculus) (\textbf{UCR}, Math 6B, two sections, Spring 2021).
+  \item First-year Calculus III (\textbf{UCR}, Math 9C, two sections, Fall 2020).
+  \item First-year Calculus I (\textbf{UBC}, Math 100, Fall 2018).
+\end{itemize}
+
+\subsection*{Upper Division Courses}
+\begin{itemize}
+  \item Differential Geometry (\textbf{SCU}, Spring 2027).
+  \item Survey of Geometry (\textbf{SCU}, Math 101, Spring 2026).
+  \item Topology (\textbf{SCU}, Math 113, Fall 2025).
+  \item Linear Algebra (\textbf{HMC}, Math 73, two sections, Spring 2025).
+  \item Ordinary Differential Equations (\textbf{HMC}, Math 82, Fall 2024).
+  \item Linear Algebra (\textbf{HMC}, Math 73, two sections, Spring 2024).
+  \item Ordinary Differential Equations (\textbf{HMC}, Math 82, two sections, Fall 2023).
+  \item Linear Algebra II (\textbf{UCR}, Math 132, Winter 2022).
+  \item Introduction to Topology (\textbf{UCR}, Math 145, Winter 2022).
+  \item Linear Algebra I (\textbf{UCR}, Math 131, two sections, Winter 2021).
+\end{itemize}
+
+\subsection*{Teacher Preparation Courses}
+\begin{itemize}
+  \item History of Mathematics (\textbf{UCR}, Math 153, Spring 2022).
+  \item Polynomials and Number Systems (\textbf{UCR}, Math 140, Spring 2022).
+\end{itemize}
+
+\subsection*{Graduate Level Courses}
+\begin{itemize}
+  \item Toric Geometry: problem and discussion sessions for a week-long mini-course at the 2022 Pan-American School in Commutative Algebra (CIMAT, Guanajuato, Mexico, June 2022).
+  \item Sheaf Theory: reading course (\textbf{UCR}, Math 194, Winter 2021).
+\end{itemize}
+
+\subsection*{Training}
+\begin{itemize}
+  \item MAA OPEN Math course ``Team-based Inquiry Learning,'' 2023.
+  \item UCR Mathematics Teaching Workshop, UCR, 2020 and 2021.
+  \item Instructional Skills Workshop, UBC, 2018.
+  \item Semester-long course: Mathematics Teaching Techniques, UBC, Fall 2015.
+\end{itemize}
+
+% ------------------------------------------------------------------
+\section{Mentorship}
+
+\entry{\textbf{Summer REU}}{June -- July 2024}
+      {10-week project with two students studying novel combinatorial aspects of moduli spaces in algebraic geometry.}{Harvey Mudd College}
+
+\entry{\textbf{Senior thesis advisor}}{August 2023 -- June 2024}
+      {Directed a senior thesis on novel combinatorial aspects of moduli spaces.}{Harvey Mudd College}
+\desc{Outcome: a research paper with the student, \arxiv{2409.08611}.}
+
+\entry{\textbf{Clinic advisor}}{August 2023 -- June 2024}
+      {Faculty mentor for a Clinic capstone project: advised a team of five seniors solving real-world technical problems for a company.}{Harvey Mudd College}
+
+\entry{\textbf{Faculty Mentor, NSF-funded California Alliance for Minority Participation (CAMP) Summer Scholars program}}{June -- August 2022}
+      {}{UC Riverside}
+\desc{The program provided the student a \$5,000 stipend to work full time for 10 weeks on a research project under my supervision. The student was invited to the Math Alliance's Field of Dreams Conference 2022. Outputs: poster presentations at the Summer Research in Science and Engineering (RISE) Undergraduate Research Symposium at UC Riverside (2022) and at the Annual Biomedical Research Conference for Minoritized Scientists (ABRCMS) 2022.}
+
+\entry{\textbf{Research Mentor, Summer REU (3 students)}}{June -- December 2022}
+      {Co-organized with P. Gallardo. A project on the mathematics of machine learning, stemming from our paper ``Enumeration of max-pooling responses with generalized permutohedra.''}{UC Riverside}
+
+\entry{\textbf{Research Mentor, reading course}}{January -- March 2022}
+      {Supervised one undergraduate student in a reading course on graduate-level sheaf theory.}{UC Riverside}
+
+% ------------------------------------------------------------------
+\section{Awards and Scholarships}
+
+\entry{\textbf{Excellence in Teaching: Outstanding Visiting Assistant Professor Award}, Mathematics Department, UC Riverside}{June 2023}{}{}
+\desc{Yearly recognition to 2 or 3 VAPs for their teaching performance. Award includes a \$500 prize.}
+
+\entry{\textbf{Candidato al Sistema Nacional de Investigadores (SNI)}, Consejo Nacional de Ciencia y Tecnología (CONACyT)}{November 2022}{}{}
+
+\entry{\textbf{Excellence in Teaching: Outstanding Visiting Assistant Professor Award}, Mathematics Department, UC Riverside}{June 2022}{}{}
+\desc{Yearly recognition to 2 or 3 VAPs for their teaching performance. Award includes a \$500 prize.}
+
+\entry{\textbf{Structured Quartet Research Ensembles (SQuaRE) grant}, American Institute of Mathematics (AIM)}{December 2021}{}{}
+\desc{AIM provides research facilities and financial support for our group to spend a week at AIM in San Jose, California. The project, ``Neural network polytopes,'' originated in the LMRC Research Workshop and is a collaboration with L. Escobar, P. Gallardo, J.L. González, G. Montúfar, and A.H. Morales.}
+
+\entry{\textbf{Latinx Mathematicians Research Community (LMRC) Research Workshop}}{June 2021}{}{}
+\desc{The LMRC, sponsored by AIM and the NSF, is a year-long program for early-career Latinx mathematicians which provides tiered mentoring, research and professional development opportunities, and establishes a large research network of Latinx mathematicians.}
+
+\entry{\textbf{International Doctoral Scholarship}, Consejo Nacional de Ciencia y Tecnología (CONACyT)}{September 2015 -- August 2019}{}{}
+\desc{Full tuition, medical insurance and a 1,000 CAD monthly stipend.}
+
+\entry{\textbf{National Master's Scholarship}, Consejo Nacional de Ciencia y Tecnología (CONACyT)}{August 2013 -- May 2015}{}{}
+
+\entry{\textbf{UNAM--UC Semester Abroad Scholarship}}{August -- December 2011}{}{}
+\desc{Full scholarship to study a semester at the Department of Physics at UC Berkeley as part of an exchange program between the University of California and UNAM.}
+
+% ------------------------------------------------------------------
+\section{Professional Service}
+
+\entry{\textbf{Co-organizer, Bay Area Mathematical Adventures (BAMA)}}{Fall 2026 -- present}
+      {Online talk series for middle and high school students, hosted at Santa Clara University.}{Santa Clara, CA, USA}
+
+\entry{\textbf{Co-organizer of the minisymposium ``New Frontiers of Geometry and Combinatorics in Machine Learning,'' Parts I--III}, SIAM Conference on Applied Algebraic Geometry (AG25)}{July 2025}
+      {}{Madison, WI, USA}
+\desc{Three-part session with 8 speakers over three days. Co-organized with L. Escobar, P. Gallardo, J.L. González, G. Montúfar, and A.H. Morales.}
+
+\entry{\textbf{Organizer of the special session ``Combinatorial Insights into Algebraic Geometry,'' 2024 Joint Mathematics Meetings}}{January 2024}
+      {}{San Francisco, CA, USA}
+\desc{The session featured 16 speakers from all career stages and diverse backgrounds. Our goal was to help the participants showcase their work and strengthen and widen their professional network.}
+
+\entry{\textbf{Co-organizer of the Western Algebraic Geometry Symposium (WAGS)}}{November 2022}
+      {}{UC Riverside}
+\desc{Largest algebraic geometry conference in the Western United States and Canada. Raised a total of \$14,000 from different UCR offices in addition to the base \$30,000 allocated by the conference's NSF grant. Other duties included inviting speakers, organizing a poster session, publicity, hiring catering services, and creating and moderating a Discord channel.}
+
+\entry{\textbf{Co-organizer of the Teaching Workshop of UCR's Department of Mathematics}}{September 2022}
+      {Teaching workshop for incoming VAPs and graduate students.}{UC Riverside}
+
+% ------------------------------------------------------------------
+\section{Invited Talks and Posters}
+
+\entry{\emph{Polymatroids as toric compactifications of point configuration spaces}.}{April 2026}
+      {Algebraic Geometry Seminar, UC Riverside}{Riverside, CA, USA}
+
+\entry{\emph{Polymatroids as toric compactifications of point configuration spaces}.}{April 2026}
+      {Commutative Algebra and Algebraic Geometry Seminar, UC Berkeley}{Berkeley, CA, USA}
+
+\entry{\emph{Polymatroids as toric compactifications of point configuration spaces}.}{March 2026}
+      {Algebra Seminar, McMaster University}{Hamilton, ON, Canada}
+
+\entry{\emph{What is a moduli space?}}{March 2026}
+      {Mathematics Colloquium, San José State University}{San José, CA, USA}
+
+\entry{\emph{Point configurations in flags and their moduli}.}{December 2025}
+      {Mathematics Colloquium, UC Santa Cruz}{Santa Cruz, CA, USA}
+
+\entry{\emph{Special Colloquium: Introducing New Faculty}.}{November 2025}
+      {Mathematics and Computer Science Colloquium, Santa Clara University}{Santa Clara, CA, USA}
+
+\entry{\emph{Moduli theory through examples}.}{October 2025}
+      {Algebra, Geometry, and Combinatorics Seminar, San Francisco State University}{San Francisco, CA, USA}
+
+\entry{\emph{What is a moduli space?}}{March 2025}
+      {Mathematical Pathways to an Excellent Future Conference, UC Riverside}{Riverside, CA, USA}
+
+\entry{\emph{Moduli spaces of points in flags of affine spaces and polymatroids}.}{March 2025}
+      {IPAM's LatMath 2025 Conference}{Los Angeles, CA, USA}
+
+\entry{\emph{What is a moduli space?}}{December 2024}
+      {Amherst College Mathematics Colloquium}{Amherst, MA, USA}
+
+\entry{\emph{Moduli spaces of points in flags of affine spaces and polymatroids}.}{December 2024}
+      {Birational Geometry Seminar (BGS), organized by Joaquín Moraga}{Online}
+
+\entry{\emph{The hidden structure of negative curves}, poster presentation.}{November 2024}
+      {Western Algebraic Geometry Symposium (WAGS), University of Arizona}{Tucson, AZ, USA}
+
+\entry{\emph{Moduli spaces of points in flags of affine spaces and polymatroids}.}{October 2024}
+      {2024 Fall Western Sectional Meeting (AMS), UC Riverside}{Riverside, CA, USA}
+
+\entry{\emph{Moduli spaces of points in flags of affine spaces and polymatroids}.}{September 2024}
+      {2024 Fall Central Sectional Meeting (AMS), University of Texas at San Antonio}{San Antonio, TX, USA}
+
+\entry{\emph{Moduli spaces through a combinatorial lens}.}{September 2024}
+      {Mathematics Colloquium of the Claremont Colleges}{Claremont, CA, USA}
+
+\entry{\emph{Blow-ups of weighted projective planes at a point: Exploring the parameter space of triangles and the MDS property}.}{April 2024}
+      {Commutative Algebra and Algebraic Geometry in TUcSon (CAAGTUS), University of Arizona}{Tucson, AZ, USA}
+
+\entry{\emph{Higher-dimensional Losev--Manin spaces and their geometry}.}{March 2024}
+      {AG@PUI Online Seminar}{Online}
+
+\entry{\emph{What is a moduli space?}}{March 2024}
+      {Algebraic Geometry Seminar, UC Riverside}{Online}
+
+\entry{\emph{Enumerating linearity regions of max-pooling layers in convolutional neural networks}.}{February 2024}
+      {Pomona College Applied Math Seminar}{Claremont, CA, USA}
+
+\entry{\emph{Exploring combinatorial aspects of max-pooling layers with undergraduates}.}{January 2024}
+      {Joint Mathematics Meetings 2024}{San Francisco, CA, USA}
+
+\entry{\emph{Higher-dimensional Losev--Manin spaces and their geometry}.}{January 2024}
+      {Joint Mathematics Meetings 2024}{San Francisco, CA, USA}
+
+\entry{\emph{The hidden structure of negative curves}.}{November 2023}
+      {Algebra/Number Theory/Combinatorics Seminar of the Claremont Colleges}{Claremont, CA, USA}
+
+\entry{\emph{What is a moduli space?}}{October 2023}
+      {Mathematics Colloquium of the Claremont Colleges}{Claremont, CA, USA}
+
+\entry{\emph{Blow-ups of weighted projective planes at a point: Exploring the parameter space of triangles and the MDS property}.}{February 2023}
+      {Algebraic Geometry Seminar, University of Utah}{Salt Lake City, UT, USA}
+
+\entry{\emph{The hidden structure of negative curves}, poster presentation.}{November 2022}
+      {Western Algebraic Geometry Symposium (WAGS), UC Riverside}{Riverside, CA, USA}
+
+\entry{\emph{The geography of negative curves}, poster presentation.}{October 2022}
+      {Texas Algebraic Geometry Symposium (TAGS), Texas A\&M}{College Station, TX, USA}
+
+\entry{\emph{Symbolic Rees algebras and negative curves}.}{September 2022}
+      {Commutative Algebra Seminar, University of Nebraska--Lincoln}{Lincoln, NE, USA}
+
+\entry{\emph{Una breve historia sobre la notación matemática}.}{September 2022}
+      {Matemáticas en Español Seminar, University of Nebraska--Lincoln}{Lincoln, NE, USA}
+
+\entry{\emph{Introduction to divisors}.}{January 2022}
+      {Algebraic Geometry Seminar, UC Riverside}{Online}
+
+\entry{\emph{Negative curves in blowups of weighted projective planes}.}{December 2021}
+      {Algebraic Geometry Seminar, UC Riverside}{Online}
+
+\entry{\emph{Curvas negativas en blowups de espacios proyectivos ponderados}.}{September 2021}
+      {Seminario de Álgebra Conmutativa y Geometría Algebraica, CIMAT}{Online}
+
+\entry{\emph{The geography of negative curves}.}{April 2021}
+      {Western Algebraic Geometry Symposium (WAGS)}{Online}
+
+\entry{\emph{A review of the theory of varieties}.}{April 2021}
+      {Algebraic Geometry Seminar, UC Riverside}{Online}
+
+\entry{\emph{Finite generation of symbolic Rees algebras from a geometric perspective}.}{March 2021}
+      {Commutative Algebra Seminar, UC Riverside}{Online}
+
+\entry{\emph{Estudiando anillos de Cox mediante una reducción a característica prima}.}{August 2019}
+      {Seminario Guillermo Torres, Institute of Mathematics, UNAM}{CU, Mexico City, Mexico}
+
+\entry{\emph{Constructing examples and non-examples of Mori Dream Spaces via a prime characteristic method}.}{June 2019}
+      {Algebraic Geometry Seminar, UC Riverside}{Riverside, CA, USA}
+
+\entry{\emph{Constructing Mori Dream Spaces and non-Mori Dream Spaces via prime characteristic methods}.}{December 2018}
+      {AG session, Winter Meeting of the Canadian Mathematical Society}{Vancouver, BC, Canada}
+
+\end{document}
