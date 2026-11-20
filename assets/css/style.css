@@ -182,6 +182,11 @@ main.container { padding-top: 2.5rem; padding-bottom: 3rem; }
 }
 .profile p { margin: .1rem 0; }
 
+/* if the intro text is shorter than the photo box, push the next
+   section below the photo instead of letting it run underneath */
+#about { display: flow-root; }
+#about > :last-child { margin-bottom: 0; }   /* keeps the spacing before the next section the same */
+
 @media (max-width: 620px) {
   .profile { float: none; margin: 0 auto 1.5rem; width: 180px; }
 }
